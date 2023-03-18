@@ -24,6 +24,27 @@ class MainActivity : AppCompatActivity() {
         val d = c.reversedArray()
         Log.d("my log", "${d.contentToString()}")
 
+        val q = c.sortedArray()
+        Log.d( "my log", "${q.contentToString()}")
+
+        var qw = arrayOf(2,2,6,7,4,3,7,8,2,7,4)
+       var bb = qw.sortedArrayDescending()
+        Log.d("my log", "${qw.contentToString()}")
+
+        var ct = qw.contains(2)
+        Log.d("my log", "${qw.contentToString()}")
+
+        for ( a in 99..105){
+            Log.d("my log", "$a")
+        }
+    val abc = listOf<String>("one","two", "three")
+
+        for (i in 0..2) Log.d("my log", "${abc[i]}")
+
+
+
+
+
 
 
 
