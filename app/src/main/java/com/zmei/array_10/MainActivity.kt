@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var array : Array<Int> = arrayOf(4,5,1,7,7,1,0)
+       /* var array : Array<Int> = arrayOf(4,5,1,7,7,1,0)
         var a = array[0]
         Log.d("my log", "Result = $a")
         array[2] = 22
@@ -36,10 +36,16 @@ class MainActivity : AppCompatActivity() {
 
         for ( a in 99..105){
             Log.d("my log", "$a")
-        }
+        }*/
     val abc = listOf<String>("one","two", "three")
 
         for (i in 0..2) Log.d("my log", "${abc[i]}")
+
+        for (i in abc) Log.d("my log", "$i")
+
+        Log.d("my log", "${abc.indices}")
+
+        for ((index, item) in abc.withIndex()) Log.d("my log", "$index $item")
 
 
 
