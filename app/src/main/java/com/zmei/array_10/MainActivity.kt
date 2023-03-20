@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
 
         for ((index, item) in abc.withIndex()) Log.d("my log", "$index $item")
 
+        for (i in 100 downTo 77) Log.d("my log" , "$i")
+
 
 
 
