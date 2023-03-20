@@ -56,9 +56,25 @@ class MainActivity : AppCompatActivity() {
         for (i in 1 until a.size) {Log.d("my log", "${a[i]}")
         if (a[i] == 32) break
         }
+        for (i in 0 until a.size) {
+            if (a[i] == 32) continue
+            Log.d("my log", "${a[i]}")
 
+        }
+var bcd = arrayListOf("123", "321", "444", "222", "111")
+    bcd.forEach {
+        Log.d("my log" ,"$it")}
 
+        var fruits = arrayListOf("apple", "melon", "lemon", "strawberry")
+        var fruitss = ""
+        var ia = 0
 
+        while (fruitss != "melon"){
+
+            fruitss = fruits[ia]
+            ia ++
+            Log.d("my log", "$fruitss")
+        }
 
 
 
