@@ -47,7 +47,15 @@ class MainActivity : AppCompatActivity() {
 
         for ((index, item) in abc.withIndex()) Log.d("my log", "$index $item")
 
-        for (i in 100 downTo 77) Log.d("my log" , "$i")
+        for (i in 100 downTo 77 step 3) Log.d("my log" , "$i")
+
+        var a = arrayOf(4,5,6,8,32,3,77,22,7734,22)
+
+        for ( i in a.indices) Log.d("my log", "$i")
+
+        for (i in 1 until a.size) {Log.d("my log", "${a[i]}")
+        if (a[i] == 32) break
+        }
 
 
 
